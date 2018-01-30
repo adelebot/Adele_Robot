@@ -15,7 +15,7 @@ Servo garra;
 Servo motorL;
 Servo motorR;
 
-void stopServos() {
+void stay() {
   motorL.detach();
   motorR.detach();
   garra.detach();
@@ -30,7 +30,7 @@ void adeleBegin() {
   motorL.attach(motorLpin);
   motorR.attach(motorRpin);
   garra.write(150);
-  stopServos();
+  stay();
 }
 
 
