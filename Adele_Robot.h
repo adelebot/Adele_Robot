@@ -63,14 +63,14 @@ void right() {
   motorR.write(180 - SOFFSET); //calibrate stop
 }
 
-void closeGarra() {
+void closeClaw() {
   garra.attach(garraPin);
   garra.write(150);
   delay(500);
   garra.detach();
 }
 
-void openGarra() {
+void openClaw() {
   garra.attach(garraPin);
   garra.write(90);
   delay(500);
@@ -119,4 +119,3 @@ void randomMove(int t) {
   }
   delay(t);
 }
-
